@@ -20,7 +20,7 @@ export const AllPages = () => {
         ...sessionRoutes,
         {
             path: '/',
-            element: <Navigate to="dashboard/default" />,
+            element: <Navigate to="dashboard" />,
         },
         {
             path: '*',
