@@ -4,7 +4,7 @@ import { authRoles } from '../../auth/authRoles'
 
 const RolesPage = Loadable(lazy(() => import('./RolesPage')))
 
-const rolesRoutes = [
+const RolesRoutes = [
     {
         path: '/roles',
         element: <RolesPage />,
@@ -12,4 +12,4 @@ const rolesRoutes = [
     },
 ]
 
-export default rolesRoutes
+export default RolesRoutes

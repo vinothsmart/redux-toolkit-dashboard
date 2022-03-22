@@ -3,7 +3,6 @@ import { Redirect } from 'react-router-dom'
 import chartsRoute from './views/charts/ChartsRoute'
 import dashboardRoutes from './views/dashboard/DashboardRoutes'
 import materialRoutes from './views/material-kit/MaterialRoutes'
-import rolesRoutes from './views/roles/RolesRoutes'
 
 const redirectRoute = [
     {
@@ -21,7 +20,6 @@ const errorRoute = [
 
 const routes = [
     ...dashboardRoutes,
-    ...rolesRoutes,
     ...materialRoutes,
     ...chartsRoute,
     ...redirectRoute,
