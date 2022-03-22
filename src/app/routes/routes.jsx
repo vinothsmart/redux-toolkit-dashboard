@@ -6,6 +6,7 @@ import dashboardRoutes from 'app/views/dashboard/DashboardRoutes'
 import sessionRoutes from 'app/views/sessions/SessionRoutes'
 import MatxLayout from '../components/MatxLayout/MatxLayout'
 import { Navigate } from 'react-router-dom'
+import rolesRoutes from 'app/views/roles/RolesRoutes'
 
 export const AllPages = () => {
     const all_routes = [
@@ -15,7 +16,12 @@ export const AllPages = () => {
                     <MatxLayout />
                 </AuthGuard>
             ),
-            children: [...dashboardRoutes, ...chartsRoute, ...materialRoutes],
+            children: [
+                ...dashboardRoutes,
+                ...rolesRoutes,
+                ...chartsRoute,
+                ...materialRoutes,
+            ],
         },
         ...sessionRoutes,
         {

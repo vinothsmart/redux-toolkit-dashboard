@@ -5,6 +5,11 @@ export const navigations = [
         icon: 'dashboard',
     },
     {
+        name: 'Roles',
+        path: '/roles',
+        icon: 'people',
+    },
+    {
         label: 'PAGES',
         type: 'label',
     },
